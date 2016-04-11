@@ -47,17 +47,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(intent);
             //여기서 값을 읽어옴 -> 눌렀을때 가져와야 하기 때문에
         }
-
-        try{
-            Toast.makeText(this, name + "씨, 공유잘생겼죠!!!", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent(this, ResultActivity.class);
-            intent.putExtra ("name",name);
-            intent.putExtra("age",10);
-            startActivity(intent);
-        }catch(NullPointerException e){
-            Toast.makeText(this, name + "이름을 입력하세요!", Toast.LENGTH_LONG).show();
-        }catch(Exception e){
-            Toast.makeText(this, name + "뭔지 모르지만 잘 안되네요!", Toast.LENGTH_LONG).show();
-        }
+//
+//        try{
+//            Toast.makeText(this, name + "씨, 공유잘생겼죠!!!", Toast.LENGTH_LONG).show();
+//            Intent intent = new Intent(this, ResultActivity.class);
+//            intent.putExtra ("name",name);
+//            intent.putExtra("age",10);
+//            startActivity(intent);
+//        }catch(NullPointerException e){
+//            Toast.makeText(this, name + "이름을 입력하세요!", Toast.LENGTH_LONG).show();
+//        }catch(Exception e){
+//            Toast.makeText(this, name + "뭔지 모르지만 잘 안되네요!", Toast.LENGTH_LONG).show();
+//        }
     }
 }
