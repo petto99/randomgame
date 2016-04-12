@@ -42,9 +42,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "이름을 입력해 주세요.", Toast.LENGTH_SHORT).show();        //꼭 show() 써주기
         }
         else {
-            Toast.makeText(this, name + "씨, 공유잘생겼죠!!", Toast.LENGTH_LONG).show();
+
+            Toast.makeText(this, name + "씨, 반가워요!", Toast.LENGTH_LONG).show();
             Intent intent = new Intent(this, ResultActivity.class);
+
+            intent.putExtra("name",name);
+            intent.putExtra("age",18);
             startActivity(intent);
+            overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             //여기서 값을 읽어옴 -> 눌렀을때 가져와야 하기 때문에
         }
 //

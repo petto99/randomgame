@@ -28,7 +28,7 @@ public class ResultActivity extends ActionBarActivity {
 
         mResult = (TextView)findViewById(R.id.result);
         mImageView = (ImageView) findViewById(R.id.imageView);
-        Log.d(TAG, "텍스트뷰, 이미지뷰 연경 성공!");
+        Log.d(TAG, "텍스트뷰, 이미지뷰 연결 성공!");
 
         Random r = new Random();
         int result = r.nextInt(7);
